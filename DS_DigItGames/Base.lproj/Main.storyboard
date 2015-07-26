@@ -1,0 +1,402 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7706" systemVersion="14E46" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="Xfm-zn-56r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="oM9-y2-mSv">
+            <objects>
+                <viewController id="Xfm-zn-56r" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="hx6-Jx-SEq"/>
+                        <viewControllerLayoutGuide type="bottom" id="poz-dO-hWB"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="UCE-Pz-tVj">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="center" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l1d-cU-hQL">
+                                <rect key="frame" x="362" y="234" width="300" height="300"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="70"/>
+                                <state key="normal" backgroundImage="CardBack"/>
+                                <connections>
+                                    <segue destination="BYZ-38-t0r" kind="showDetail" id="ZWp-Xr-mhK"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tap on the card to begin matching!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Cu-lz-RGp" userLabel="Instruction">
+                                <rect key="frame" x="6" y="121" width="1013" height="72"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="60"/>
+                                <color key="textColor" red="0.53645833330000003" green="0.25007482710000001" blue="0.073961295319999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="A concentration game by Dilara Semerci for Dig-It Games" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="lZu-aG-HHb" userLabel="ForDigit">
+                                <rect key="frame" x="127" y="657" width="771" height="72"/>
+                                <fontDescription key="fontDescription" type="italicSystem" pointSize="30"/>
+                                <color key="textColor" red="0.53645833330000003" green="0.25007482710000001" blue="0.073961295319999995" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.9870778093" green="0.82449482249999995" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="poz-dO-hWB" firstAttribute="top" secondItem="lZu-aG-HHb" secondAttribute="bottom" constant="30" id="J4G-jm-nut"/>
+                            <constraint firstAttribute="centerX" secondItem="l1d-cU-hQL" secondAttribute="centerX" id="KU2-Yg-fCB"/>
+                            <constraint firstAttribute="centerY" secondItem="l1d-cU-hQL" secondAttribute="centerY" id="Ptr-sv-CdA"/>
+                            <constraint firstItem="l1d-cU-hQL" firstAttribute="top" secondItem="hx6-Jx-SEq" secondAttribute="bottom" constant="214" id="Uar-Z0-0xo"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="l1d-cU-hQL" secondAttribute="trailing" constant="346" id="fKv-i1-SXG"/>
+                            <constraint firstItem="l1d-cU-hQL" firstAttribute="leading" secondItem="UCE-Pz-tVj" secondAttribute="leadingMargin" constant="346" id="gBx-i1-Lct"/>
+                            <constraint firstItem="lZu-aG-HHb" firstAttribute="top" secondItem="l1d-cU-hQL" secondAttribute="bottom" constant="24" id="nQf-3H-56M"/>
+                            <constraint firstAttribute="centerX" secondItem="lZu-aG-HHb" secondAttribute="centerX" id="rSw-rJ-uoh"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QyY-5Y-WUH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-804" y="-1709"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleAspectFit" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yMx-aI-kNF">
+                                <rect key="frame" x="68" y="168" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qMJ-W9-mV8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oTy-h3-bha">
+                                <rect key="frame" x="68" y="552" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="D05-H3-1wh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y2r-G1-jia">
+                                <rect key="frame" x="68" y="296" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kDo-98-lck"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JrR-Dg-B2c">
+                                <rect key="frame" x="836" y="552" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="UQQ-hr-d4W"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="81X-EP-4Xt">
+                                <rect key="frame" x="196" y="168" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N8q-ap-que"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QJk-gR-bxp">
+                                <rect key="frame" x="196" y="296" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lWa-LQ-ePL"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0rm-zg-Ssd">
+                                <rect key="frame" x="324" y="552" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ND9-bH-30L"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FFq-HG-4oc">
+                                <rect key="frame" x="452" y="552" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4cy-7Q-wuP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b6a-3k-eR0">
+                                <rect key="frame" x="452" y="424" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="x9P-Ye-Dfi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sms-0V-ZBd">
+                                <rect key="frame" x="580" y="424" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Zeh-zg-EiY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uuj-AZ-t6z">
+                                <rect key="frame" x="324" y="296" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="sMX-Lr-vep"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QxB-bu-vxR">
+                                <rect key="frame" x="452" y="296" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="NmQ-9z-AhO"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fv2-Eb-RYW">
+                                <rect key="frame" x="836" y="296" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="nDr-7s-1lw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ycU-ee-DCT">
+                                <rect key="frame" x="324" y="424" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eOJ-9Y-cta"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1d1-VF-3Vh">
+                                <rect key="frame" x="68" y="424" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7h2-WQ-coV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bUK-EW-XTr">
+                                <rect key="frame" x="580" y="552" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6gw-4P-6v8"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sVC-cE-jJs">
+                                <rect key="frame" x="196" y="552" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6Jn-JS-eFQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Kqh-lk-dRC">
+                                <rect key="frame" x="452" y="168" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="a6e-CU-hfi"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DOR-o4-19Q">
+                                <rect key="frame" x="324" y="168" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="OLc-qt-LXV"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cuk-ek-WQd">
+                                <rect key="frame" x="580" y="168" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7oi-G3-kX2"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aki-J1-PYb">
+                                <rect key="frame" x="708" y="168" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MfE-M3-Sp6"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3IV-R8-jFv">
+                                <rect key="frame" x="836" y="168" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Yxm-RQ-JYr"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dy9-Mh-DIT">
+                                <rect key="frame" x="708" y="296" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cjh-Gz-ifw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qmt-TK-t4l">
+                                <rect key="frame" x="836" y="424" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="eF1-sy-p6c"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rlk-U5-bje">
+                                <rect key="frame" x="580" y="296" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Gpa-Lx-8lW"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4a2-vg-lQ1">
+                                <rect key="frame" x="196" y="424" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lF0-qT-rNP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SSK-dl-ft7">
+                                <rect key="frame" x="708" y="424" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ESs-tK-dfv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JW8-bf-7SR">
+                                <rect key="frame" x="708" y="552" width="100" height="100"/>
+                                <state key="normal">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="tapOnCardButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0lb-Xw-VbB"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lTO-Rd-ItH" userLabel="Clock" customClass="CircleProgressBar">
+                                <rect key="frame" x="16" y="20" width="120" height="120"/>
+                                <color key="backgroundColor" red="0.9870778093" green="0.84679226549999997" blue="0.042738412570000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="Sc4-Vd-s7y"/>
+                                    <constraint firstAttribute="height" constant="120" id="Z5T-ux-wgi"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progress">
+                                        <integer key="value" value="1"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="progressBarWidth">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressBarTrackColor">
+                                        <color key="value" red="0.98092250631313127" green="0.61774633460632522" blue="0.047627686528764666" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="progressBarProgressColor">
+                                        <color key="value" red="0.7951980744949495" green="0.25932517530065818" blue="0.13792154071699583" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0/14 Matched" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oij-T2-FKk" userLabel="ScoreLabel">
+                                <rect key="frame" x="680" y="47" width="308" height="39"/>
+                                <fontDescription key="fontDescription" type="system" weight="black" pointSize="39"/>
+                                <color key="textColor" red="0.53645833333333326" green="0.25007482711550882" blue="0.073961295322290274" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.98707780934343436" green="0.84679226553791442" blue="0.042738412574333196" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="lTO-Rd-ItH" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="9Wa-qk-lpr"/>
+                            <constraint firstItem="lTO-Rd-ItH" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="Bl6-yL-E38"/>
+                        </constraints>
+                    </view>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="iPad"/>
+                    <connections>
+                        <outlet property="CircleClock" destination="lTO-Rd-ItH" id="l9H-fm-kcW"/>
+                        <outlet property="scoreLabel" destination="oij-T2-FKk" id="4tw-cw-LnP"/>
+                        <outletCollection property="cardButtons" destination="0rm-zg-Ssd" id="7Zm-91-dFc"/>
+                        <outletCollection property="cardButtons" destination="3IV-R8-jFv" id="PxK-Tt-14R"/>
+                        <outletCollection property="cardButtons" destination="JW8-bf-7SR" id="3ye-Vc-4WT"/>
+                        <outletCollection property="cardButtons" destination="SSK-dl-ft7" id="5rj-iU-Yud"/>
+                        <outletCollection property="cardButtons" destination="4a2-vg-lQ1" id="YL9-N6-pn9"/>
+                        <outletCollection property="cardButtons" destination="Rlk-U5-bje" id="6Lj-Rz-Gvv"/>
+                        <outletCollection property="cardButtons" destination="qmt-TK-t4l" id="h82-cZ-YvB"/>
+                        <outletCollection property="cardButtons" destination="dy9-Mh-DIT" id="Buk-h8-7Og"/>
+                        <outletCollection property="cardButtons" destination="aki-J1-PYb" id="e0H-Gt-u2s"/>
+                        <outletCollection property="cardButtons" destination="cuk-ek-WQd" id="beH-qD-HIa"/>
+                        <outletCollection property="cardButtons" destination="DOR-o4-19Q" id="ae2-45-6Tb"/>
+                        <outletCollection property="cardButtons" destination="Kqh-lk-dRC" id="eXC-PP-Xz4"/>
+                        <outletCollection property="cardButtons" destination="sVC-cE-jJs" id="9F3-3H-rMV"/>
+                        <outletCollection property="cardButtons" destination="bUK-EW-XTr" id="Elb-pZ-Jvn"/>
+                        <outletCollection property="cardButtons" destination="1d1-VF-3Vh" id="uuP-xs-IWd"/>
+                        <outletCollection property="cardButtons" destination="ycU-ee-DCT" id="u70-RY-bgO"/>
+                        <outletCollection property="cardButtons" destination="fv2-Eb-RYW" id="W93-tK-V0X"/>
+                        <outletCollection property="cardButtons" destination="QxB-bu-vxR" id="M21-Nc-VZz"/>
+                        <outletCollection property="cardButtons" destination="Uuj-AZ-t6z" id="VFN-oA-5fH"/>
+                        <outletCollection property="cardButtons" destination="sms-0V-ZBd" id="Rsf-6Y-pI6"/>
+                        <outletCollection property="cardButtons" destination="b6a-3k-eR0" id="Bsv-ON-lq9"/>
+                        <outletCollection property="cardButtons" destination="FFq-HG-4oc" id="1kr-ZF-vLd"/>
+                        <outletCollection property="cardButtons" destination="QJk-gR-bxp" id="2uc-5v-QzD"/>
+                        <outletCollection property="cardButtons" destination="81X-EP-4Xt" id="dQb-Hc-Bne"/>
+                        <outletCollection property="cardButtons" destination="JrR-Dg-B2c" id="mKu-Ex-vOE"/>
+                        <outletCollection property="cardButtons" destination="Y2r-G1-jia" id="7O9-mX-jfG"/>
+                        <outletCollection property="cardButtons" destination="oTy-h3-bha" id="exq-8H-F3K"/>
+                        <outletCollection property="cardButtons" destination="yMx-aI-kNF" id="hwz-i2-Fhc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-804" y="-695"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="CardBack" width="140" height="140"/>
+    </resources>
+</document>
