@@ -3,6 +3,9 @@
 This is a concentration (card matching) game for iOS, written in Objective-C. I followed Stanford's iPhone Application Development Online Course to get familiar with Objective-C and XCode environment.
 I started to write the code based on Lecture 2 (http://web.stanford.edu/class/cs193p/cgi-bin/drupal/system/files/lectures/Lecture%202.pdf) and worked on top of it. 
 
+###Art Assets
+Art assets are created by Regis Frey for this project.
+
 ###Third Party Plugins:
 - CircleProgressBar (https://github.com/Eclair/CircleProgressBar)
 - JTAlertView (https://github.com/kubatru/JTAlertView)
